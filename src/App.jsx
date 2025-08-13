@@ -6,13 +6,22 @@ import Footer from './components/Footer';
 
 
 function App() {
- 
-
+  const AddToDoInput=document.querySelector(".AddToDo__input");
+  let [TodoElements,SetTodoElements]=useState([]);
+  function AddElement(){
+    if(AddToDoInput.value!=''){
+    SetTodoElements([...TodoElements,{id: Date.now(),text:AddToDoInput.value}]);
+    AddToDoInput.value='';
+    }
+    else{
+      alert("You have to enter text!!")
+    }
+  };
   return (
     <>
       <Header>Official To-do List!!!!</Header>
       <main>
-        <AddToDo></AddToDo>
+        <AddToDo onClick={AddElement}></AddToDo>
         <div className="container">
           
         </div>

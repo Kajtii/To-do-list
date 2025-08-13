@@ -3,9 +3,9 @@ import React from 'react'
 const AddToDo = ({onClick}) => {
   return (
     <div className="AddToDo">
-        <label htmlFor="" className='AddToDO__text'>Text: </label>
-        <input type="text" className="AddToDo__inputText" placeholder='Enter here...'/>
-        <button className='AddToDO__button' onClick={onClick}>Add</button>
+        <label htmlFor="" className='AddToDo__inputText'>Text: </label>
+        <input type="text" className="AddToDo__input" placeholder='Enter here...'/>
+        <button className='AddToDo__button' onClick={onClick}>Add</button>
     </div>
   )
 }
