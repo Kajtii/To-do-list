@@ -1,8 +1,10 @@
-import React from 'react'
 
-const ToDo = () => {
+const ToDo = ({id,text}) => {
   return (
-    <div>ToDo</div>
+    <div className='ToDo'>
+        <h3 className='ToDo__id'>{id}</h3>
+        <p className='ToDo__title'>{text}</p>
+    </div>
   )
 }
 
