@@ -10,14 +10,14 @@ function App() {
 
   return (
     <>
-      <Header></Header>
+      <Header>Official To-do List!!!!</Header>
       <main>
         <AddToDo></AddToDo>
         <div className="container">
           
         </div>
       </main>
-      <Footer></Footer>
+      <Footer>Strona stworzona dla jaj i jest copyright</Footer>
     </>
   )
 }
