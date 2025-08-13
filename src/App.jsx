@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import Header from './components/Header';
+import AddToDo from './components/AddToDo';
+import ToDo from './components/ToDo';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -6,9 +10,14 @@ function App() {
 
   return (
     <>
-      <header>
-        <h1>To do list</h1>
-      </header>
+      <Header></Header>
+      <main>
+        <AddToDo></AddToDo>
+        <div className="container">
+          
+        </div>
+      </main>
+      <Footer></Footer>
     </>
   )
 }
