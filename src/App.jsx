@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 
 function App() {
-  let [number,SetNumber]=useState(0);
+  let [number,SetNumber]=useState(1);
   let [todoElements,SetTodoElements]=useState([]);
   function AddElement(){
     const AddToDoInput=document.querySelector(".AddToDo__input");
@@ -27,7 +27,7 @@ function App() {
       <main>
         <AddToDo onClick={AddElement}></AddToDo>
         <div className="container">
-          
+
           {todoElements.map(el=>(
              <ToDo key={el.id} text={el.title} id={el.id}></ToDo>
         ))}
