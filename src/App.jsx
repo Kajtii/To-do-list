@@ -35,7 +35,7 @@ function App() {
 
         </div>
       </main>
-      <Footer>Strona stworzona dla jaj i jest copyright</Footer>
+      
     </>
   )
 }
